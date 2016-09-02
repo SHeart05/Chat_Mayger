@@ -1,0 +1,16 @@
+<div class="container">
+    <form ng-submit="">
+        <div class="form-group">
+            <label for="username">Usernamen: </label>
+            <input type="text" placeholder="vorname.nachname@gmx.net" value="{{ landingVm.person.username }}" id="username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password: </label>
+            <input type="password" value="{{ landingVm.person.password }}" id="password">
+        </div>
+        <div class="form-group">
+            <input type="submit"  value="Login">
+        </div>
+    </form>
+
+</div>
