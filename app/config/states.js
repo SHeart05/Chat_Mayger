@@ -18,25 +18,25 @@
         $stateProvider
             .state('landing', {
                 url:'/',
-                templateUrl: 'app/core/landing/landing.html',
+                templateUrl: 'core/landing/landing.html',
                 controller: 'LandingCtrl',
                 controllerAs: 'landingVm'
             })
             .state('register', {
                 url:'/register',
-                templateUrl: 'app/components/register/register.html',
+                templateUrl: 'components/register/register.html',
                 controller: 'RegisterCtrl',
                 controllerAs: 'registerVm'
             })
             .state('account', {
                 url:'/account',
-                templateUrl: 'app/components/account/account.html',
+                templateUrl: 'components/account/account.html',
                 controller: 'AccountCtrl',
                 controllerAs: 'accountVm'
             })
             .state ('shoppingcard', {
                 url: '/account/shoppoingcard',
-                templateUrl: 'app/components/account/shoppingcard/shoppingcard.html',
+                templateUrl: 'components/account/shoppingcard/shoppingcard.html',
                 controller: 'ShoppingCardCtrl',
                 controllerAs: 'shoppingcardVm'
             });

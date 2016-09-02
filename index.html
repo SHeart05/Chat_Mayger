@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="de" ng-app="pizzaPalace">
-    <head>
-        <meta charset="UTF-8">
-        <title>Lieferando liebt Pizza Palace</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <title>Lieferando liebt Pizza Palace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Include CSS -->
-        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.min.css" />
+  <!-- Include CSS -->
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.min.css" />
 
-    </head>
-    <body>
-        <header>
+</head>
+<body ng-controller="AppCtrl as vm">
+  <!-- header -->
+  <header></header>
 
-        </header>
-        <div>Fuck you</div>
-        <footer></footer>
+  <nav ng-include src="components/menu/menu.html"></nav>
 
-        <!-- # Including Scripts -->
-        <script src="angular/angular.min.js"></script>
-       <!-- AngluarJS -->
-       <script src="angular-ui-router/release/angular-ui-router.min.js"></script>
+  <!-- main -->
+  <main ui-view ng-cloak></main>
 
-        <!-- Bootstrap -->
-        <script src="jquery/dist/jquery.min.js"></script>
-        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- footer -->
+  <footer></footer>
 
-        <!-- Own Scripts -->
-        <script src="app.js"></script>
-        <script src="app.controller.js"></script>
-        <script src="config/state.js"></script>
-    </body>
+  <!-- Bootstrap -->
+  <script src="jquery/dist/jquery.min.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- # Including Scripts -->
+  <script src="angular/angular.js"></script>
+
+  <script src="angular-ui-router/release/angular-ui-router.min.js"></script>
+
+
+  <!-- Own Scripts -->
+  <script src="app.js"></script>
+  <script src="config/states.js"></script>
+  <script src="app.controller.js"></script>
+</body>
 </html>

@@ -7,7 +7,7 @@
 
     angular
       .module('pizzaPalace', [
-        'ui-router'
+        'ui.router'
       ])
       .config (config);
 
