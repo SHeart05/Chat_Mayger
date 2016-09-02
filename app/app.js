@@ -5,13 +5,11 @@
 (function () {
     "use strict";
 
-    angular.module('pizzaPalace', ['ui-router'])
-        .config (config)
-        .directive('desktopNav', {
-            restrict: 'E',
-            templateUrl: 'app/components/menu/menu.html'
-        });
-
+    angular
+      .module('pizzaPalace', [
+        'ui-router'
+      ])
+      .config (config);
 
     function config ($controllerProvider, $locationProvider){
         $controllerProvider.allowGlobals(); // Set all global

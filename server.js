@@ -12,6 +12,7 @@ var mongoose = require('mongoose');
 var app = express();
 
 app.use(express.static( __basedir + '/app'));
+app.use(express.static( __basedir + '/node_modules'));
 
 
 app.get('*', function (req, res) {

@@ -4,8 +4,9 @@
 (function () {
     "use strict";
 
-    angular.module('pizzaPalace')
-        .controller('AppCtrl', AppCtrl);
+    angular
+      .module('pizzaPalace')
+      .controller('AppCtrl', AppCtrl);
 
     function AppCtrl(){
         var vm = this;
